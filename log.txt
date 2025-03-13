@@ -1,3 +1,31 @@
 git config --global user.name DioCabral
 git config --global user.email dyogo199818@gmail.com 
 Alteração na nova-feature
+mkdir git-exercicio_avaliado
+cd git-exercicio_avaliado
+git init
+touch log.txt
+git commit -m "Add log.txt"
+git remote add origin https://github.com/Diocabral/git-exercicio_avaliado.git
+git clone https://github.com/Diocabral/git-exercicio_avaliado.git
+cd git-exercicio_avaliado
+echo "git config --global user.name "DioCabral"
+git config --global user.email "dyogo199818@gmail.com" " >> log.txt
+git add log.txt
+git commit -m "updt log.txt
+git push origin main
+git checkout -b nova-feature
+echo "Alteração na nova-feature" >> log.txt
+git add log.txt
+git commit -m "Alteração na nova-feature"
+git push origin nova-feature
+git checkout main
+git pull origin main
+git checkout -b novo-branch
+git add log.txt
+git commit -m "aletraçoes no log no novo branch"
+git checkout main
+git add log.txt
+git commit -m "Alterações no log.txt no main"
+git checkout novo-branch
+git merge main
