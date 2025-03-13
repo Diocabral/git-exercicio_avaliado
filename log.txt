@@ -1,0 +1,2 @@
+git config --global user.name DioCabral
+git config --global user.email dyogo199818@gmail.com 
